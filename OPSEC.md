@@ -66,6 +66,8 @@ separated by a randomized interval. This is the highest-value, lowest-effort lev
 `add` -> `tgtdeleg` / `asktgs` -> act -> `remove`. A privileged link that exists for minutes instead of
 days drastically shrinks the window for a scheduled audit or a BadSuccessor hunt to catch it.
 
+Note that during engagements where Credential Guard was enabled, `tgtdeleg` can't be used no more. Therefore, the workaround is to write a ticket to a file and use the ticket that way.
+
 **Reduce credential noise.** Prefer running in an already-authorized context (so `tgtdeleg` reuses
 the logon) over `/username` + `/password`, which adds an authentication event (4624) against the DC.
 
