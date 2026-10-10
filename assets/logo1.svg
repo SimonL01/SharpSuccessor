@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="SharpSuccessor">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17110A"/>
+      <stop offset="1" stop-color="#0F0A06"/>
+    </linearGradient>
+    <linearGradient id="bronze1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A6A3E"/>
+      <stop offset="1" stop-color="#C9A063"/>
+    </linearGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <rect x="1" y="1" width="898" height="218" rx="18" fill="url(#bg1)" stroke="#2A1E12" stroke-width="1"/>
+
+  <!-- emblem: shell-prompt chevrons ( >> _ ) -->
+  <g transform="translate(60 50)">
+    <rect x="0" y="0" width="120" height="120" rx="20" fill="#1B140C" stroke="#38291A" stroke-width="1.5"/>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+      <polyline points="32,34 58,62 32,90" stroke="#8C7A5E"/>
+      <polyline points="56,34 82,62 56,90" stroke="url(#bronze1)"/>
+    </g>
+    <line x1="34" y1="100" x2="88" y2="100" stroke="url(#bronze1)" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <!-- wordmark -->
+  <g font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace">
+    <text x="214" y="104" font-size="52" font-weight="600" letter-spacing="1" fill="#EFE6D4">Sharp<tspan fill="#A28B6C">Successor</tspan></text>
+    <line x1="216" y1="124" x2="430" y2="124" stroke="url(#bronze1)" stroke-width="2" opacity="0.85"/>
+    <text x="216" y="156" font-size="17" letter-spacing="5" fill="#6E5C44">BADSUCCESSOR &amp; dMSA WEAPONIZATION</text>
+  </g>
+</svg>
